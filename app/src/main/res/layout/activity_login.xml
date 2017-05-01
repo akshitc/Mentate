@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey_98"
+    android:orientation="vertical"
+    tools:context="com.everlong.mentate.login.ui.LoginActivity">
+
+    <include layout="@layout/toolbar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="36dp"
+            android:text="@string/name"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/name_et"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/rectangle_with_white_bg"
+            android:hint="@string/name_hint"
+            android:paddingLeft="15dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="36dp"
+            android:text="@string/gender"
+            android:textSize="18sp" />
+
+        <RadioGroup
+            android:id="@+id/gender_rg"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/male"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/radio_button_bg_selector"
+                android:button="@android:color/transparent"
+                android:gravity="center"
+                android:text="@string/male"
+                android:textAllCaps="true"
+                android:textColor="@color/radio_button_text_selector" />
+
+            <RadioButton
+                android:id="@+id/female"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/radio_button_bg_selector"
+                android:button="@android:color/transparent"
+                android:gravity="center"
+                android:text="@string/female"
+                android:textAllCaps="true"
+                android:textColor="@color/radio_button_text_selector" />
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="36dp"
+            android:text="@string/age"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/age_et"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_marginTop="10dp"
+            android:inputType="number"
+            android:background="@drawable/rectangle_with_white_bg"
+            android:hint="@string/age_hint"
+            android:paddingLeft="15dp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/save_button"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_gravity="bottom"
+        android:background="@color/colorAccent"
+        android:text="@string/save"
+        android:textColor="@color/white"
+        android:textSize="@dimen/fontsize_18sp" />
+
+</LinearLayout>

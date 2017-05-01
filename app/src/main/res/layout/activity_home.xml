@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/mind_think" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/dimen_24dp"
+        android:text="@string/app_name"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:textSize="@dimen/fontsize_24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/best_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="64dp"
+        android:padding="@dimen/dimen_10dp"
+        android:background="@color/black_36pc"
+        android:text="@string/best_score"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:textSize="@dimen/fontsize_18sp"/>
+
+    <Button
+        android:id="@+id/start_button"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_56dp"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="@dimen/dimen_10dp"
+        android:layout_marginLeft="@dimen/dimen_48dp"
+        android:layout_marginRight="@dimen/dimen_48dp"
+        android:background="@color/black_87pc"
+        android:text="@string/start_game"
+        android:textColor="@color/white"
+        android:textSize="@dimen/fontsize_18sp" />
+</FrameLayout>
